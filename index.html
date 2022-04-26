@@ -1,165 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en-us">
 
-    <meta charset="utf-8">
-    <title>Tweeter</title>
+<head>
+  <!-- Metadata, title, etc. -->
+  <title>Jordan Pearcey</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="A class blog for CS 290, Web Development at Oregon state University with Professor Robert Hess.">
+  <meta name="author" content="Jordan Pearcey">
+  <!-- Style for page -->
+  <link href="style_sheet.css" rel="stylesheet">
+</head>
 
-    <!-- This is a 3rd-party stylesheet to incorporate the font family to be used for this page ("Roboto"). -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-
-    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css" media="screen">
-
-  </head>
-
-  <body>
-
-    <header>
-      <!-- The <i> tag below includes the lizard hand icon from Font Awesome.  Do not directly style this element. -->
-      <a href="#"><h1 class="site-title"><i class="far fa-hand-lizard"></i> tweeter</h1></a>
-
-      <nav class="navbar">
-        <ul class="navlist">
-          <li class="navitem navlink active"><a href="#">Home</a></li>
-          <li class="navitem navlink"><a href="#">Trending</a></li>
-          <li class="navitem navlink"><a href="#">People</a></li>
-          <li class="navitem navbar-search">
-            <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="twit-container">
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            Sitting in my web dev lecture... This class is so awesome!  Pass the popcorn.
-          </p>
-          <p class="twit-author">
-            <a href="#">CSMajor2022</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            Beavers baseball team is looking pretty darn good again this year.  Go Beavs!
-          </p>
-          <p class="twit-author">
-            <a href="#">BeaverBeliever</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            A body in motion must remain in motion unless acted upon by an outside force.
-          </p>
-          <p class="twit-author">
-            <a href="#">NewtonRulez</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            Huh?
-          </p>
-          <p class="twit-author">
-            <a href="#">ConfusedTweeterer</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            Why did the calf cross the road?
-          </p>
-          <p class="twit-author">
-            <a href="#">Setup</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            To get to the udder side!
-          </p>
-          <p class="twit-author">
-            <a href="#">Punchline</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            Any questions about flexboxes?
-          </p>
-          <p class="twit-author">
-            <a href="#">Hess</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="twit">
-        <div class="twit-icon">
-          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <div class="twit-content">
-          <p class="twit-text">
-            Friendly reminder: the tax deadline was yesterday.
-          </p>
-          <p class="twit-author">
-            <a href="#">TheIRS</a>
-          </p>
-        </div>
-      </article>
-
-    </main>
-
-    <button type="button" id="create-twit-button"><i class="fas fa-bullhorn"></i></button>
-
-  </body>
+<body>
+  <div class="wrapper center">
+    <div class="center">
+      <h1>Jordan Pearcey's Web Development Blog</h1>
+    </div>
+    <div>
+      <span style = "float:left">Oregon State University</span>
+      <span style ="float:right">Web Development, CS 290</span><br><br><br>
+    </div>
+    <!-- Link to blog page -->
+    <div align="center">
+      <a href="blog.html";><strong>Blog Entries</strong></a>
+    </div>
+    <div>
+      <h3>About Me</h3>
+      <ul>
+        <li>Email: pearceyj@oregonstate.edu
+        <li>Major: Computer Science
+        <li>Applied area: Human-Computer Interaction (HCI)
+        <li>Year: Senior
+      </ul>
+    </div>
+    <div>
+      <h3>Questions and Answers</h3>
+        <h4>What is the most complex or interesting thing you've done with your
+        current web development skills?</h4>
+        <p>I have no formal web development experience. However, in the past,
+        I have worked with html for some simple, personal sites and forums and,
+        of course, my former Myspace page!</p>
+        <h4>What do you hope to learn from this class?</h4>
+        <p>So far, I have mainly learned C++ development in an academic
+        setting without reach to the outside world. I hope to attain skills
+        that will allow me to begin creating my own applications and webpages
+        accessibe on the internet.</p>
+        <h4>Have you signed up for our course Campuswire forum?</h4>
+        <p>Yes.</p>
+        <h4>Describe the most interesting fact about yourself or unique
+        experience you have had.</h4>
+        <p>I lived in Japan as a child due to my Dad's military service.
+        While in Japan I had the opportunity to act in various commercials,
+        as well as some limited video series--for teaching English. I even
+        posed in a "19th century" photo featured in a commercial calendar,
+        for the month of October! All this and I never learned Japanese...</p>
+    </div>
+    <div class="page-image">
+      <img src="jordan_pearcey_author.jpg" alt="Photo of the author.">
+    </div>
+  </div>
+</body>
 
 </html>
